@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -23,22 +25,32 @@ header h1 {
 }
 header p {
   font-size: 25px;
+  text-align: center;
+}
+.h4c{
+	  color: #000000;
+	  z-index: 100;
+	  text-align: center;
 }
 
-.pads2 {
-  background: white;
-  width: 100%;
-  display: flex;
-  margin-bottom: 50px;
-  margin-top: 0px;
 
-}
+
 .pads1 {
   background: white;
   width: 100%;
   display: flex;
   margin-bottom: 20px;
   margin-top: 50px;
+  z-index: -2;
+
+}
+/*
+.pads2 {
+  background: white;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 0px;
 
 }
 .pads2 > div {
@@ -49,7 +61,7 @@ header p {
   margin-top: 0px;
   margin-bottom: 0px;
 
-}
+}*/
 .pads1 > div {
   height: 100px;
   width: 100px;
@@ -59,31 +71,41 @@ header p {
   margin-bottom: 0px;
 
 }
+.pads1 > div:hover {
+ background-color: #000000;
+ transform: scale(1.2);
+
+}
 .pad0 {
   background: #60d394;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad1 {
   background: #d36060;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 
 }
 .pad2 {
-  background: #c060d3;
+  background: #c050d3;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad3 {
   background: #d3d160;
    margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad4 {
   background: #606bd3;
    margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
   
 
 }
@@ -91,26 +113,70 @@ header p {
   background: #60c2d3;
  margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad6 {
   background: #60d394;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad7 {
   background: #d36060;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 
 }
 .pad8 {
   background: #c060d3;
   margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
 }
 .pad9 {
   background: #d3d800;
    margin-right: 20px;
   margin-left: : 20px;
+  z-index: 100;
+
 }
 
+/* bg color changing*/
+.wrapper { 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
